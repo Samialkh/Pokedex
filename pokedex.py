@@ -168,7 +168,8 @@ def valider():
     poids = poids_saisie.get()
     talent = talent_saisie.get()
     faiblesse = faiblesse_saisie.get()
-    listPokemons.append(Pokemon(nom, type, taille, poids,talent, faiblesse))
+    image = None
+    listPokemons.append(Pokemon(nom, type, taille, poids,talent, faiblesse, image))
     listbox.insert(tk.END, nom)
 # Bouton valider
 bouton = tk.Button(fenetre, text="Valider", command= valider, font= "Verdana 10 bold", bg="white", border=0)
